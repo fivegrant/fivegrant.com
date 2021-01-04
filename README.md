@@ -9,6 +9,9 @@
 	- Build Into Page
 	- Option for PDF Download
 	- Update Content on Resume
+- Credits
+  - WorkSans
+  - Sass
 ## Possible Color Schemes
 ### 1
 - #0E0B16 - Void

@@ -25,3 +25,4 @@ run:
 	npx http-server serve 
 clean:
 	rm -r serve
+	rm -r .*cache*

@@ -1,5 +1,10 @@
 # fivegrant.com README
 ## Content
+- Mastodon 
+- Blog
+- Beliefs
+- Predictions
+  - Include Metaculus.com?
 - Resume
 	- Build Into Page
 	- Option for PDF Download

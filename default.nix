@@ -11,6 +11,7 @@ stdenv.mkDerivation rec {
   buildInputs = [
     gnumake
     node
+    python38Packages.markdown
     sass
  ];
 

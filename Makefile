@@ -26,3 +26,4 @@ run:
 clean:
 	rm -r serve
 	rm -r .*cache*
+refresh: clean generate

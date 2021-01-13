@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Body Normal";
+  src: url(Work-Sans-Medium.woff2) format("woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: "Body Bold";
+  src: url(Work-Sans-Bold.woff2) format("woff2");
+  font-weight: bold; }
+@font-face {
+  font-family: "Body Italic";
+  src: url(Work-Sans-Italic.woff2) format("woff2"); }
+@font-face {
+  font-family: "Body BoldItalic";
+  src: url(Work-Sans-BoldItalic.woff2) format("woff2"); }
+body {
+  font-family: "Body Normal"; }
+
+ul {
+  list-style-type: none;
+  list-style-position: inside; }
+
+.title {
+  z-index: 1;
+  position: relative;
+  margin: 0% 0% 0% 0%;
+  padding: 0%;
+  font-family: "Body Normal";
+  font-size: 55px;
+  user-select: none; }
+
+.bar {
+  z-index: 1;
+  font-family: "Body Normal";
+  padding: 0%;
+  background-color: #30415D;
+  line-height: 1.6;
+  width: 10%;
+  border-radius: 5px; }
+  .bar p {
+    margin: 0%;
+    border-radius: inherit; }
+
+.main {
+  z-index: 1;
+  position: absolute;
+  justify-content: center;
+  top: 80px;
+  margin: 0% 10% 0% 10%;
+  padding: 0.4% 1% 0.4% 1%;
+  width: 80%;
+  height: 50%;
+  text-decoration: inherit;
+  color: inherit;
+  border-width: 3px;
+  border-style: none none none solid;
+  border-color: #CF6766;
+  background-color: #e8b3b3; }
+  .main p {
+    color: black; }
+
+.point {
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  .point:hover {
+    color: #CF6766;
+    background-color: #031424;
+    cursor: pointer;
+    font-family: "Body Bold"; }
+
+/*# sourceMappingURL=fivegrant.css.map */

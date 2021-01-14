@@ -3,7 +3,7 @@
 generate: style template script assets
 
 style: serve
-	sass styles/main.sass serve/fivegrant.css
+	sass styles/home.sass serve/home.css
 
 template: serve
 	cp templates/main.html serve/index.html

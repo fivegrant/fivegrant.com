@@ -21,41 +21,37 @@ ul {
 
 .title {
   z-index: 1;
-  position: relative;
-  margin: 0% 0% 0% 0%;
+  margin: 10% 25% 2% 25%;
+  text-align: center;
   padding: 0%;
   font-family: "Body Normal";
-  font-size: 55px;
+  font-size: 85px;
+  width: 50%;
   user-select: none; }
 
 .bar {
   z-index: 1;
   font-family: "Body Normal";
   padding: 0%;
-  background-color: #30415D;
+  text-align: center;
   line-height: 1.6;
   width: 10%;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin: 2% 45% 0% 45%; }
   .bar p {
     margin: 0%;
     border-radius: inherit; }
 
-.main {
-  z-index: 1;
+#contact {
   position: absolute;
   justify-content: center;
-  top: 80px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Body Italic";
+  bottom: 16px;
   margin: 0% 10% 0% 10%;
-  padding: 0.4% 1% 0.4% 1%;
-  width: 80%;
-  height: 50%;
-  text-decoration: inherit;
-  color: inherit;
-  border-width: 3px;
-  border-style: none none none solid;
-  border-color: #CF6766;
-  background-color: #e8b3b3; }
-  .main p {
+  width: 80%; }
+  #contact p {
     color: black; }
 
 .point {
@@ -66,9 +62,9 @@ ul {
   -moz-user-select: none;
   -ms-user-select: none; }
   .point:hover {
-    color: #CF6766;
-    background-color: #031424;
+    color: #4717F6;
+    background-color: #0E0B16;
     cursor: pointer;
     font-family: "Body Bold"; }
 
-/*# sourceMappingURL=fivegrant.css.map */
+/*# sourceMappingURL=home.css.map */

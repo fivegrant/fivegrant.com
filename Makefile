@@ -6,10 +6,10 @@ style: serve
 	sass styles/home.sass serve/home.css
 
 template: serve
-	cp templates/main.html serve/index.html
+	cp templates/*.html serve/
 
 script: serve
-	cp scripts/main.js serve/fivegrant.js
+	cp scripts/*.js serve/
 
 assets: serve
 	cp assets/fonts/Work-Sans/fonts/static/WOFF2/WorkSans-Medium.woff2 serve/Work-Sans-Medium.woff2

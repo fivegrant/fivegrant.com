@@ -1,0 +1,18 @@
+@import "styles/home"
+@import "styles/effects"
+
+.blog-title
+  @include title-essence
+  @include subtle-essence
+
+#recede
+  animation-duration: 0.75s
+  animation-timing-function: ease-out
+  animation-name: recede-title
+  animation-fill-mode: forwards
+  animation-direction: reverse
+ 
+@keyframes recede-title
+  to
+    @include splash-essence
+ 

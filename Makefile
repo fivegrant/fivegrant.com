@@ -1,15 +1,19 @@
 #!/usr/bin/make -f
 
-generate: style template script assets
+generate: style template script posts assets
 
 style: serve
-	sass styles/home.sass serve/home.css
+	sass styles/home.sass serve/home.css -I .
+	sass styles/feed.sass serve/feed.css -I .
 
 template: serve
 	cp templates/*.html serve/
 
 script: serve
-	cp scripts/*.js serve/
+	echo "No Javascript in Use!"
+
+posts: serve
+	echo "No Posts in Use!"
 
 assets: serve
 	cp assets/fonts/Work-Sans/fonts/static/WOFF2/WorkSans-Medium.woff2 serve/Work-Sans-Medium.woff2

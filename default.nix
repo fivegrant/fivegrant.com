@@ -12,6 +12,7 @@ stdenv.mkDerivation rec {
     gnumake
     node
     python38Packages.markdown
+    pandoc
     sass
  ];
 

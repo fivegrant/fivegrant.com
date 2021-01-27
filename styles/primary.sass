@@ -23,9 +23,6 @@ body
   width: 30%
   margin: .85% 35% 2% 35%
 
-
-
-
 .splash-title
   @include title-essence
   @include splash-essence
@@ -51,19 +48,53 @@ body
     padding: 2% 25%
     border-radius: inherit
 
-.content
-  & p
-    font-size: 20px
+@mixin content-position
     line-height: 1.5
     text-align: left
-    width: 40%
-    margin: 0% 30% 2% 30%
+    width: 50%
+    margin: 0% 25% 2% 25%
+
+@mixin code-format
+    background-color: $theme-text
+    color: $theme-back
+    border-radius: 2px
+    text-indent: 0px
+
+.content
+  & p
+    @include content-position
+    font-size: 20px
     & a
       color: $link-color 
       text-decoration-style: dashed
       &:hover
         color: $alt-link-color
         text-decoration-style: none
+  & h1
+    @include content-position
+  & h2
+    @include content-position
+  & h3
+    @include content-position
+  & h4
+    @include content-position
+  & h5
+    @include content-position
+  & h6
+    @include content-position
+  & ul
+    @include content-position
+    font-size: 20px
+  & ol
+    @include content-position
+    font-size: 20px
+  & code
+    @include content-position
+    @include code-format
+  & pre
+      font-size: 18.5px
+      width: 60%
+      margin: 0% 20% 2% 20%
 
 #contact
   position: absolute

@@ -8,37 +8,3 @@ $DESCRIPTION: an explanation of what the
 $PUBLISHED: Date when it was published. (Set this variable to current
                                          iso timestamp if it is null)
 $LAST_UPDATED: Date when article was last updated.
-$TAGS: list of descriptive words (e.g. ai, politics, epistemology)
-
-rss entry
-```
-  <entry>
-    <title>$POST_NAME</title>
-    <link href="http://fivegrant.com/posts/$SHORTENED_NAME"/>
-    <id>https://fivegrant.com/posts/$SHORTENED_NAME</id>
-    <updated>$LAST_UPDATED</updated>
-    <summary>$DESCRIPTION</summary>
-  </entry>
-```
-
-html entry
-```
-<!DOCTYPE html>
-<html>
-<head>
-  <title>$POST_NAME</title>
-  <meta name="author" content="Five Grant">
-  <meta name="keywords" content=$TAGS>
-  <link rel="stylesheet" href="blog.css">
-  <link rel="icon" href="favicon.png">
-</head>
-<body>
-  <p class = "blog-title">five grant</p>
-  <time datetime = $PUBLISHED class = "post-title">$POST_NAME</time>
-  <div class = "post-content">
-
-  </div>
-  <p id = "contact">5 [at] fivegrant [dot] com</p>
-</body>
-</html>
-```

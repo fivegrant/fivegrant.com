@@ -1,13 +1,13 @@
 #!/usr/bin/make -f
 
-generate: style template script posts assets
+generate: style layouts script posts assets
 
 style: serve
-	sass styles/home.sass serve/home.css -I .
+	sass styles/primary.sass serve/primary.css -I .
 	sass styles/blog.sass serve/blog.css -I .
 
-template: serve
-	cp templates/*.html serve/
+layouts: serve
+	cp layouts/*.html serve/
 
 script: serve
 	echo "No Javascript in Use!"

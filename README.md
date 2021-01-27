@@ -12,6 +12,8 @@
 - Credits
   - WorkSans
   - Sass
+- Donate
+  - https://taler.net/en/
 ## Possible Color Schemes
 ### 1
 - #0E0B16 - Void

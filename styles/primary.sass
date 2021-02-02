@@ -58,7 +58,6 @@ body
     background-color: $theme-text
     color: $theme-back
     border-radius: 2px
-    text-indent: 0px
 
 .content
   & p
@@ -89,12 +88,16 @@ body
     @include content-position
     font-size: 20px
   & code
-    @include content-position
     @include code-format
-  & pre
-      font-size: 18.5px
-      width: 60%
-      margin: 0% 20% 2% 20%
+  & pre 
+    font-size: 18.4px
+    text-align: left
+    width: 60%
+    margin: 0% 20% 2% 20%
+    & code
+    background-color: inherit 
+    color: inherit
+    border-radius: inherit
 
 #contact
   position: absolute

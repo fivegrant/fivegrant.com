@@ -20,6 +20,7 @@ assets: serve
 	cp assets/fonts/Work-Sans/fonts/static/WOFF2/WorkSans-Bold.woff2 serve/Work-Sans-Bold.woff2
 	cp assets/fonts/Work-Sans/fonts/static/WOFF2/WorkSans-Italic.woff2 serve/Work-Sans-Italic.woff2
 	cp assets/fonts/Work-Sans/fonts/static/WOFF2/WorkSans-BoldItalic.woff2 serve/Work-Sans-Italic.woff2
+	cp assets/images/favicon.jpeg serve/favicon.jpeg
 
 serve:
 	mkdir -p serve

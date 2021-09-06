@@ -1,7 +1,0 @@
-<entry>
-  <title>$POST_NAME</title>
-  <link href="http://fivegrant.com/posts/$SHORTENED_NAME"/>
-  <id>https://fivegrant.com/posts/$SHORTENED_NAME</id>
-  <updated>$LAST_UPDATED</updated>
-  <summary>$DESCRIPTION</summary>
-</entry>

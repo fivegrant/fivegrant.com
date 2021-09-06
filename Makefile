@@ -13,7 +13,7 @@ script: serve
 	echo "No Javascript in Use!"
 
 posts: serve
-	cp -r posts serve/
+	cp posts/published/* serve/posts/
 
 assets: serve
 	cp assets/fonts/Work-Sans/fonts/static/WOFF2/WorkSans-Medium.woff2 serve/Work-Sans-Medium.woff2
@@ -21,9 +21,12 @@ assets: serve
 	cp assets/fonts/Work-Sans/fonts/static/WOFF2/WorkSans-Italic.woff2 serve/Work-Sans-Italic.woff2
 	cp assets/fonts/Work-Sans/fonts/static/WOFF2/WorkSans-BoldItalic.woff2 serve/Work-Sans-Italic.woff2
 	cp assets/images/favicon.jpeg serve/favicon.jpeg
+	cp assets/icons/* serve/icons/
 
 serve:
 	mkdir -p serve
+	mkdir -p serve/posts
+	mkdir -p serve/icons
 
 .PHONY: run clean
 run:

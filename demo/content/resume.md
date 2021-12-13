@@ -2,7 +2,7 @@
 title = "five's resume"
 slug = "resume"
 drafts = true
-template = "resume.html"
+template = "404.html"
 +++
 
 # Info

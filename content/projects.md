@@ -1,7 +1,6 @@
 +++
 title = "five's projects"
 slug = "projects"
-drafts = true
 template = "projects.html"
 +++
 

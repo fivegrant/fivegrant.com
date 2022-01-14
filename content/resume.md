@@ -1,7 +1,6 @@
 +++
 title = "five's resume"
 slug = "resume"
-drafts = true
 template = "404.html"
 +++
 

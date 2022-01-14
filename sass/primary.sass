@@ -12,6 +12,11 @@ body
   text-align: center
   padding: 0%
   user-select: none
+  a 
+    background-color: $theme-back
+    color: $theme-text
+    text-decoration: none
+
 
 @mixin splash-essence
   font-size: 85px
@@ -19,13 +24,17 @@ body
   margin: 7.5% 25% 1% 25%
 
 @mixin subtle-essence
-  font-size: 50px
+  font-size: 35px
   width: 30%
-  margin: .85% 35% 2% 35%
+  margin: .85% 35% .85% 35%
 
 .splash-title
   @include title-essence
   @include splash-essence
+
+.small-title
+  @include title-essence
+  @include subtle-essence
 
 .selection_bar 
   z-index: 1
@@ -42,24 +51,33 @@ body
 @mixin content-position
     line-height: 1.5
     text-align: left
-    width: 50%
-    margin: 0% 25% 2% 25%
+    width: 70%
+    margin: 0% 15% 2% 15%
 
 @mixin code-format
     background-color: $theme-text
     color: $theme-back
     border-radius: 2px
 
+@mixin hyperlink
+    color: $link-color 
+    text-decoration-style: dashed
+    &:hover
+      color: $alt-link-color
+      text-decoration-style: none
+
 .content
   & p
     @include content-position
     font-size: 20px
     & a
-      color: $link-color 
-      text-decoration-style: dashed
-      &:hover
-        color: $alt-link-color
-        text-decoration-style: none
+      //color: $link-color 
+      //text-decoration-style: dashed
+      //&:hover
+      //  color: $alt-link-color
+      //  text-decoration-style: none
+      @include hyperlink
+
   & blockquote
     opacity: 0.6
     font-weight: normal
@@ -82,17 +100,18 @@ body
   & ol
     @include content-position
     font-size: 20px
-  & code
-    @include code-format
+  //& code
+  //  @include code-format
   & pre 
+    width: 61%
+    margin: 0% 23.5% 2% 17.5%
+    padding: 1%
     font-size: 18.4px
-    text-align: left
-    width: 60%
-    margin: 0% 20% 2% 20%
-    & code
-    background-color: inherit 
-    color: inherit
-    border-radius: inherit
+  //  text-align: left
+  //  & code
+  //  background-color: inherit 
+  //  color: inherit
+  //  border-radius: inherit
 
 #contact
   position: absolute

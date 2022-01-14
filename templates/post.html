@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/blog.css">
+  <link rel="icon" href="/images/favicon.jpeg">
+</head>
+<body>
+  <p class = "small-title"><a href="/blog">five's blog</a><p>
+  <h1 class="post-title">{{ page.title }}</h1>
+  <h3 class="post-date">{{ page.date }}</h3>
+  <div class = "content">
+    {{ page.content | safe}}
+  </div>
+  {% include "media_bar.html" %}
+</body>
+</html>

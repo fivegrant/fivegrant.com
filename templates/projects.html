@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>five grant's projects</title>
+  <title>five's projects</title>
   <link rel="stylesheet" href="/primary.css">
   <link rel="icon" href="/images/favicon.jpeg">
 </head>
 <body>
-  <p class = "splash-title">five grant</p>
-  <ul class = "selection_bar">
-    <li class = "point"><a href="/">blog</a></li>
-    <li class = "point"><a href="/">projects</a><li>
-    <li class = "point"><a href="/">resume</a></li>  
-  </ul>
+  <p class = "small-title"><a href="/">five grant</a><p>
   {% include "media_bar.html" %}
+  <div class = "content">
+    {{ page.content | safe}}
+  </div>
 </body>
 </html>

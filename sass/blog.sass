@@ -1,0 +1,43 @@
+@import "primary"
+@import "effects"
+
+
+@mixin post-heading
+  font-family: 'Work-Sans'
+  padding: 0%
+  text-align: center
+
+.post-title
+  @include post-heading
+  font-size: 52px
+  margin: 2% 5% .85% 5%
+  width: 90%
+
+.post-date
+  @include post-heading
+  margin: .85% 40% .85% 40%
+  width: 20%
+  font-weight: normal
+
+#recede
+  animation-duration: 0.75s
+  animation-timing-function: ease-out
+  animation-name: recede-title
+  animation-fill-mode: forwards
+  animation-direction: reverse
+ 
+@keyframes recede-title
+  to
+    @include splash-essence
+ 
+.feed
+    line-height: 1.5
+    text-align: left
+    font-size: 20px
+    width: 50%
+    margin: 0% 25% 2% 25%
+
+    p a
+      @include hyperlink
+
+

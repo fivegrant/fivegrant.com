@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>five's blog</title>
+  <link rel="stylesheet" href="/blog.css">
+  <link rel="icon" href="/favicon.jpeg">
+</head>
+
+<body>
+  <p class = "small-title"><a href="/">five grant</a><p>
+  {% include "media_bar.html" %}
+  <div class="feed">
+    {% for post in section.pages %}
+      <p>{{post.date}}: <a href="{{ post.permalink }}">{{ post.title }}</a></p>
+    {% endfor %}
+  </div>
+</body>
+</html>
